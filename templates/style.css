@@ -1,0 +1,69 @@
+body{
+    background-color:antiquewhite;
+    margin: 0px;
+    padding: 0px;
+    
+}
+.head{
+    margin:0.25%;
+    width: 99.5%;
+    height: 50px;
+    background-image: linear-gradient(orange,white,green);
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+
+
+}
+.logo{
+    height: 50px;
+    width: 100px;
+    background-color: black;
+    
+}
+.lr{
+    min-height: 100px;
+    width: 100px;
+    text-align: center;
+    margin-top: 15px;
+    
+}
+.lbtn{
+    padding: 0px 10px;
+    margin-right: 15px;
+  
+
+}
+.lbtn:hover{
+    background-image: linear-gradient(orange,white,green);
+    color: blue;
+}
+.marq{
+    font-size: 28px;
+    color: blue;
+}
+.grapic{
+    
+    width: 100%;
+    height: 300px;
+}
+.mainc{
+   
+    width: fit-content;
+    height: fit-content;
+    margin-left: 40%
+    
+}
+.input{
+    border-radius: 5px;
+    padding: 5px 0px;
+    border: 2px solid burlywood;
+    padding-left: 20px;
+    font-weight: 600;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.option:on-click{
+    background: transparent;
+    border: none;
+    font-size:0;
+}

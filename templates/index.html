@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+    <style>
+        body{
+    background-color:antiquewhite;
+    margin: 0px;
+    padding: 0px;
+    
+}
+.head{
+    margin:0.25%;
+    width: 99.5%;
+    height: 50px;
+    background-image: linear-gradient(orange,white,green);
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+
+
+}
+.logo{
+    height: 50px;
+    width: 100px;
+    background-color: black;
+    
+}
+.lr{
+    min-height: 100px;
+    width: 100px;
+    text-align: center;
+    margin-top: 15px;
+    
+}
+.lbtn{
+    padding: 0px 10px;
+    margin-right: 15px;
+  
+
+}
+.lbtn:hover{
+    background-image: linear-gradient(orange,white,green);
+    color: blue;
+}
+.marq{
+    font-size: 28px;
+    color: blue;
+}
+.grapic{
+    
+    width: 100%;
+    height: 300px;
+}
+.mainc{
+   
+    width: fit-content;
+    height: fit-content;
+    margin-left: 40%
+    
+}
+.input{
+    border-radius: 5px;
+    padding: 5px 0px;
+    border: 2px solid burlywood;
+    padding-left: 20px;
+    font-weight: 600;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.option:on-click{
+    background: transparent;
+    border: none;
+    font-size:0;
+}
+    </style>
+</head>
+<body>
+    <div class="head">
+        <div class="logo"></div>
+        <marquee class="marq"  direction = "left" loop="" >. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . </marquee>
+        <marquee class="marq"  direction = "right" loop="" >. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .  </marquee>
+
+        <div class="lr">
+            <input type="button"   value="login" class="lbtn">
+        </div>
+    </div>
+    <div class="grapic"></div>
+    <div class="mainc">
+        <form action="/getdata" method="get">
+            <input name="url" type="text" placeholder="enter the url"/>
+            <button type="submit">submit</button>
+        </form>
+    </div>
+    <script>
+        function fun(){
+            document.getElementById("options").innerHTML=`<input type="radio" value='res="144p"' name="quality">144p<br>
+        <input type="radio" value='res="360p"' name="quality">360p<br>
+        <input type="radio" value='res="480p"' name="quality">480p<br>
+        <input type="radio" value='res="720p"' name="quality">720p<br>
+        <input type="radio" value='res="1080p"' name="quality">1080p<br>`
+        }
+    </script>
+</body>
+</html>

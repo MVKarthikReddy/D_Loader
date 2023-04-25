@@ -50,7 +50,7 @@ def u_download(link):
 
 
 def home(request):
-    return render(request,"hello.html")
+    return render(request,"index.html")
 def getdata(request):
     a = u_download(request.GET.get("url","off"))
     params = {"name":"Karthik Reddy","nature":"bad boy"}
